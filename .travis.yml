@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "node"
+  - "stable"
 repo_token: JGOXdEUq8Emb4aSvsSMaiu3UudPfAqKVJ
 script: npm run test
-after_script: "npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls"
+after_script: "npm run cover && cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
