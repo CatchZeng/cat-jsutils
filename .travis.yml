@@ -1,7 +1,5 @@
 language: node_js
 repo_token: JGOXdEUq8Emb4aSvsSMaiu3UudPfAqKVJ
-before_script:
-  - npm install
-script: npm run mocha
+script: npm run test
 after_script:
   npm run cov
