@@ -1,9 +1,6 @@
 # cat-jsutils
 
-A collection of JavaScript utility functions.
-These are the functions that I need all the time.
-
-The library is designed not to have any dependencies.
+A collection of JavaScript utility functions without any dependencies.
 
 ## Installation
 
