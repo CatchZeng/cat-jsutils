@@ -3,5 +3,4 @@ node_js:
   - "node"
 repo_token: JGOXdEUq8Emb4aSvsSMaiu3UudPfAqKVJ
 script: npm run test
-after_script:
-  npm run cov
+after_script: "npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls"
