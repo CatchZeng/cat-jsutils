@@ -1,5 +1,7 @@
 # cat-jsutils
 
+[![NPM version](https://img.shields.io/npm/v/cat-jsutils.svg)](https://www.npmjs.com/package/cat-jsutils)
+
 A collection of JavaScript utility functions without any dependencies.
 
 ## Installation
