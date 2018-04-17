@@ -1,4 +1,4 @@
-# cat-jsutils
+![logo](https://raw.githubusercontent.com/CatchZeng/cat-jsutils/master/logo.png)
 
 [![NPM version](https://img.shields.io/npm/v/cat-jsutils.svg)](https://www.npmjs.com/package/cat-jsutils)
 [![travis ci](https://api.travis-ci.org/CatchZeng/cat-jsutils.svg?branch=master)](https://travis-ci.org/CatchZeng/cat-jsutils)
