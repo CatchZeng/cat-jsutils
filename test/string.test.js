@@ -106,4 +106,66 @@ describe('string', function () {
             expect(string.containsAll('a','','a')).to.be.true;
         })
     })
+
+    describe('#changeCase(source, caseType)', function () {
+        it('should return undefined when the source is undefined', function () {
+            expect(string.changeCase(undefined,string.CaseType.capitalize)).to.be.undefined;
+        })
+
+        it('should return \'\' when the source is \'\'', function () {
+            expect(string.changeCase('',string.CaseType.capitalize)).to.be.equal('');
+        })
+
+        it('uppercaseFirst -- should return Mynameiscatch when the source is mynameIsCatch', function () {
+            expect(string.changeCase('mynameIsCatch',string.CaseType.uppercaseFirst)).to.be.equal('Mynameiscatch');
+        })
+
+        it('uppercaseFirst -- should return Mynameiscatch when the source is MynameIscatch', function () {
+            expect(string.changeCase('MynameIscatch',string.CaseType.uppercaseFirst)).to.be.equal('Mynameiscatch');
+        })
+
+        it('lowercaseFirst -- should return mYNAMEISCATCH when the source is MynameIsCatch', function () {
+            expect(string.changeCase('MynameIsCatch',string.CaseType.lowercaseFirst)).to.be.equal('mYNAMEISCATCH');
+        })
+
+        it('lowercaseFirst -- should return mYNAMEISCATCH when the source is mynameIsCatch', function () {
+            expect(string.changeCase('mynameIsCatch',string.CaseType.lowercaseFirst)).to.be.equal('mYNAMEISCATCH');
+        })
+
+        it('toggleCase -- should return mYNAMEiScATCH when the source is MynameIsCatch', function () {
+            expect(string.changeCase('MynameIsCatch',string.CaseType.toggleCase)).to.be.equal('mYNAMEiScATCH');
+        })
+
+        it('toggleCase -- should return MYNAMEiScATCH when the source is mynameIsCatch', function () {
+            expect(string.changeCase('mynameIsCatch',string.CaseType.toggleCase)).to.be.equal('MYNAMEiScATCH');
+        })
+
+        it('toggleCase -- should return mYNAMEiScATCH when the source is MynameIsCatch', function () {
+            expect(string.changeCase('MynameIsCatch',string.CaseType.toggleCase)).to.be.equal('mYNAMEiScATCH');
+        })
+
+        it('toggleCase -- should return mYNAMEiS123cATCH when the source is MynameIs123Catch', function () {
+            expect(string.changeCase('MynameIs123Catch',string.CaseType.toggleCase)).to.be.equal('mYNAMEiS123cATCH');
+        })
+
+        it('uppercaseAll -- should return MYNAMEISCATCH when the source is mynameIsCatch', function () {
+            expect(string.changeCase('mynameIsCatch',string.CaseType.uppercaseAll)).to.be.equal('MYNAMEISCATCH');
+        })
+
+        it('uppercaseAll -- should return MYNAMEISCATCH when the source is MynameIsCatch', function () {
+            expect(string.changeCase('MynameIsCatch',string.CaseType.uppercaseAll)).to.be.equal('MYNAMEISCATCH');
+        })
+
+        it('lowercaseAll -- should return mynameiscatch when the source is mynameIsCatch', function () {
+            expect(string.changeCase('mynameIsCatch',string.CaseType.lowercaseAll)).to.be.equal('mynameiscatch');
+        })
+
+        it('lowercaseAll -- should return mynameiscatch when the source is MynameIsCatch', function () {
+            expect(string.changeCase('MynameIsCatch',string.CaseType.lowercaseAll)).to.be.equal('mynameiscatch');
+        })
+
+        it('unknown CaseType -- should return MynameIsCatch when the source is MynameIsCatch', function () {
+            expect(string.changeCase('MynameIsCatch',8)).to.be.equal('MynameIsCatch');
+        })
+    })
 })

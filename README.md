@@ -44,6 +44,9 @@ Determine whether source contains any of the value.
 #### containsAll(source, ...value)
 Determine whether source contains all values.
 
+#### changeCase(source, caseType)
+Change source case with CaseType
+
 ### number
 
 ---
