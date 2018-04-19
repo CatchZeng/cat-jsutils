@@ -1,6 +1,6 @@
 {
   "name": "cat-jsutils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "js utils",
   "main": "index.js",
   "readmeFilename": "README.md",
@@ -14,6 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/CatchZeng/cat-jsutils.git"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "src/"
+  ],
   "keywords": [
     "util",
     "utils",
