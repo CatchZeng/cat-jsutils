@@ -47,6 +47,9 @@ Determine whether source contains all values.
 #### changeCase(source, caseType)
 Change source case with CaseType
 
+#### genUUID(len, radix)
+Generate UUID with length and radix.
+
 ### number
 
 ---

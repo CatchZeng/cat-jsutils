@@ -178,7 +178,7 @@ describe('string', function () {
             expect(string.genUUID(undefined,1).length).to.be.equal(36)
         })
 
-        it('uuid length should be 36 when the len is undefined', function () {
+        it('uuid length should be 3 when the len is 3 and radix is undefined', function () {
             expect(string.genUUID(3,undefined).length).to.be.equal(3)
         })
     })
