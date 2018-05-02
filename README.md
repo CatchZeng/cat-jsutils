@@ -57,6 +57,13 @@ Generate UUID with length and radix.
 #### isNum(value)
 Determine whether value is a Number.
 
+### array
+
+---
+
+#### indexOf(arr, val)
+Get value's index in array.
+
 
 ## Coverage
 
